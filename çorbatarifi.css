@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins :wght@100;300;400;500;600 & display=swap');
+*{
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* widht ve heighti etkilemeden padding ve border ekleme*/
+    border: none;
+    outline: none; /*dış çizgi görünmesin*/
+    text-decoration: none; /*linkin altındaki çizgiyi siliyor*/
+    text-transform: capitalize; /*baş harflerini büyük yazıyor*/
+    transition: 0.2s ease; /*yavaş geçişi sağlıyor*/
+}
+:root{
+    --main-color: #a81313;
+    --black-color: #000;
+    --border: 0.1rem solid rgba(255,255,255,0.4);
+    overflow-y:scroll;
+
+}
+/*! base html codes*/
+html{
+    font-size: 62.5%;
+    overflow: hidden; /*sağa sola kaydırmayı kaldırma*/
+    scroll-padding-top: 7rem; /*kaydırmada kenar boşluğu*/
+    scroll-behavior: smooth; /*kaydırma efekti verir*/
+}
+body{
+    background-color: var(--main-color);
+    height: 200vh;
+}
+section{
+    padding: 0 5%;
+    position: relative;
+    /* left: 20px; */
+}
+.btn{
+    margin: 1rem;
+    display: inline-block;
+    padding: 1.5rem 3.25rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: white;
+    background-color: #000;
+}
+.btn:hover{
+   opacity: 0.7;
+}
+/*header başlangıç*/
+.heading{
+    color: white;
+    text-transform: uppercase; /*hepsini büyük harf yazar*/
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 0.1rem solid white;
+    
+}
+.header .logo img{
+    height: 12rem;
+}
+.header{
+    background-color: white;
+    display: flex; /*yan yana dizme*/
+    align-items: center; /*dikeyde hizalama*/
+    justify-content: space-between; /*öğeleri yan yana hizalama*/
+    padding: 0 5%;
+    margin: 2rem 5%;
+    border-radius: 30rem; /*kenarları yuvarlaklaştırma*/
+    box-shadow: 0px 0px 17px -2px rgba(0,0,0,0.75); /*gölgelendirme*/
+    position: sticky;/*scroll düzenleme(yukarı aşağı bizimle gelmesini düzenleme*/
+    top: 0px;
+
+    z-index: 1000; /*gürünme önceliği*/
+}
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent; /*üstüne gelince menülerin altına çizgi ekleme*/
+}
+.header .navbar a:hover{
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin: left 2rem;
+    background-color: transparent;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    background: url(./arkaplan.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -16.5rem;
+   
+}
+.home .content{
+    max-width: 100rem;
+    margin-top: 350px;
+    
+    
+}
+.home .content h3{
+    font-size: 5rem;
+    color: white;
+}
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8; /*satırlar aras boşluk*/
+    padding: 1rem 0;
+    color: #ccc
+}
+/*footer başlangıç*/
+.footer{
+    background-color: var(--black-color);
+    text-align: center;
+ }
+ .footer .search{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+ }
+.footer .search .search-input{
+    width: 25rem;
+    
+}
+.footer .search .btn-primary{
+    background-color: var(--main-color);
+    padding: 1rem 3rem;
+    margin-left: 1rem;
+}
+.search-input{
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+.footer .paylas{
+    padding: 1rem 0;
+}
+.footer .paylas a{
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+.footer .paylas a:hover{
+    background-color: var(--main-color);
+}
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+}
+.footer .links a:hover {
+    background-color: #000;
+    opacity: 0.7;
+}
+.footer .aciklama{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 1.5rem;
+}
+
+.footer .aciklama span{
+    color: var(--main-color);
+}
+/*about*/
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;/*yazıyla resim arasındaki boşluk*/
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .img{
+    width: 100%;
+
+}
+.about .row .content{
+    flex: 1 1 80rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #fff;
+}
+.about .row .content p{
+    font-size: 1.2rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
