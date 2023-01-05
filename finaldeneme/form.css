@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;/*dikeyde hizalama*/
+    justify-content: center;/*yatayda hizalama*/
+    background-color: #a81313;
+    max-height: 1000px;
+}
+.container{
+    text-align: center;
+    width: 400px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 25px 25px 20px rgba(1, 1, 1, .6);
+}
+.container h1{
+    margin-top: 25px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;/*harfler arası boşluk*/
+    font-weight: bold;/*kalın yazı tipi*/
+}
+.container input{
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    padding-left: 10px;/*kutunun içindeki yazıların sola mesafesi*/
+    margin-right: 20px;/*kutuların sağa mesafesi*/
+    font-size: 15px;
+    transition: all .4s;
+
+}
+.container button{
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: white;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s;
+} 
+.container textarea{
+    outline: none;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+    margin-top: 25px;
+    padding-left: 10px;/*kutunun içindeki yazıların sola mesafesi*/
+    margin-right: 1px;/*kutuların sağa mesafesi*/
+    font-size: 15px;
+    transition: all .4s;
+}
+
