@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>başvuru formu</title>
+    <title>iletişim formu</title>
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" 
     integrity="sha512-f2MWjotY+JCWDlE0+QAshlykvZUtIm35A6RHwfYZPdxKgLJpL8B+VVxjpHJwZDsZaWdyHVhlIHoblFYGkmrbhg==" 
@@ -14,37 +14,35 @@
 <body>
     
     <div class="container">
-        <h1>başvuru formu</h1>
+       
+        <h1>iletişim formu</h1>
         <div>
+            <tr>
+                <td></td>
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="adınız soyadınız">
-        </div>
-        <div>
-            <i class="fas fa-user-plus"></i>
-            <input type="text" placeholder="yaşınız">
-        </div>
-        <div>
-            <i class="fas fa-venus-mars"></i>
-            <input type="text" placeholder="cinsiyetiniz">
-        </div>
-        <div>
-            <i class="fas fa-university"></i>
-            <input type="text" placeholder="mezun olduğunuz okul">
+           <label> <input type="text" placeholder="adınız soyadınız"></label>
+        </tr>
         </div>
         <div>
             <i class="fas fa-envelope"></i>
-            <input type="text" placeholder="e-postanız">
+            <label><input type="text" placeholder="e-postanız"></label>
         </div>
         <div>
             <i class="fas fa-phone"></i>
-            <input type="text" placeholder="telefon numaranız">
+            <label> <input type="text" placeholder="telefon numaranız"></label>
         </div>
         <div>
             <i class="fas fa-home"></i>
-            <input type="text" placeholder="adresiniz">
+            <label><input type="text" placeholder="adresiniz"></label>
         </div>
-       
-        <button type="submit" onclick="kayit()">kayıt ol</button>
+        <div>
+            <i class="far fa-pencil"></i>
+            <label><textarea name="" id="" cols="22" rows="5" placeholder="önerileriniz" ></textarea></label>
+        </div>
+        
+        
+        <button type="submit" onclick="kayit()">gönder</button>
+   
 </div>
 </body>
 </html>
